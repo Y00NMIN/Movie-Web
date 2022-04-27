@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+.Movie_list {
+  display: flex;
+  width: 100wh;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.Movie_Poster {
+  display: flex;
+}
+
+.Movie_Poster_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px 0 10px 20px;
+}
