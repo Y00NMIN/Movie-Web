@@ -1,0 +1,35 @@
+.movie_img {
+    display: block;
+    position: relative;
+}
+
+.movie_desc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 280px;
+    margin-left: 10px 0 10px 20px;
+}
+
+.movie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 280px;
+    width: 400px;
+}
+
+.movie_title{
+    font-size: 20px;
+}
+
+.movie_year {
+    display: flex;
+}
+
+.movie_list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}

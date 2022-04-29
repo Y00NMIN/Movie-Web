@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/movie detail">
+        <Route path="/movie">
           <Detail />
         </Route>
         <Route path="/">
