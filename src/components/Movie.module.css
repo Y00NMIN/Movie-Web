@@ -1,35 +1,40 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 15px 10px 0 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.movie{
+    display: flex;
+    width: 600px;
+    margin-bottom:  10px;
+    position: relative
+}
+
 .movie_img {
     display: block;
-    position: relative;
+    height: 370px;
+    width: 300px;
 }
 
 .movie_desc {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     height: 280px;
-    margin-left: 10px 0 10px 20px;
-}
-
-.movie {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 280px;
-    width: 400px;
 }
 
 .movie_title{
     font-size: 20px;
 }
 
-.movie_year {
-    display: flex;
-}
-
 .movie_list{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin-left:  10px;
     list-style: none;
 }
