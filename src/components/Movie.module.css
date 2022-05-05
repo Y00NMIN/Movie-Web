@@ -1,40 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "IBM-Plex";
+}
+
 body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    margin: 15px 10px 0 10px;
     flex-wrap: wrap;
     flex-direction: row;
+    background-color: #000000;
 }
 
 .movie{
     display: flex;
     width: 600px;
     margin-bottom:  10px;
-    position: relative
+    position: relative;
+    margin: 15px 10px 0 10px;
 }
 
 .movie_img {
     display: block;
     height: 370px;
-    width: 300px;
+    max-width: 240px;
+    border-radius: 10px;
 }
-
+ 
 .movie_desc {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 280px;
-}
+    height: 370px;
+    width:  400px;
+    margin: 0 10px;
+} 
 
 .movie_title{
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 10px 0;
 }
 
+.movie_title_link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.movie_year{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.movie_text{
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    border-radius: 20px;
+}
+
+
 .movie_list{
+    color: #fff;
     display: flex;
-    flex-direction: column;
-    margin-left:  10px;
-    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.movie_list li{
+    margin-left: 10px;
+}
+
+.movie_list li::after{
+    content: "";
+    margin: 0 10px;
 }

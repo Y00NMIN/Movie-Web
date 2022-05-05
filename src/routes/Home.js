@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState } from "react";
+import React, { Component }  from 'react';
 import Movie from "../components/Movie";
 import styles from "./Home.module.css";
+import profile from '../src_assets/profile.jpg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -28,12 +31,12 @@ function Home() {
         </section>
       ) : (
         <section className={styles.main}>
-          <section className={styles.nav}>
-            <div className={styles.nav_main}>
-              <h1 className={styles.nav_title}>Recom</h1>
-              <div className={styles.nav_profile}>hello</div>
-            </div>
+          <section className={styles.sidebar}>
+            <h1 className={styles.sidebar_title}>Recom</h1>
           </section>
+          <div className={styles.nav}>
+            <img src={profile} className={styles.nav_profile}  alt='profile' />
+          </div>
           <section className={styles.mainPage}>
             {movies.map((movie) => (
               <Movie
