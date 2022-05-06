@@ -1,9 +1,12 @@
 import {useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import React, { Component }  from 'react';
 import Movie from "../components/Movie";
 import styles from "./Home.module.css";
 import profile from '../src_assets/profile.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch , faHouse , faStar, faBookmark, faArrowRotateLeft, faSquareCheck} from "@fortawesome/free-solid-svg-icons";
+
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -33,9 +36,42 @@ function Home() {
         <section className={styles.main}>
           <section className={styles.sidebar}>
             <h1 className={styles.sidebar_title}>Recom</h1>
+            <div className={styles.sidebar_setting}>
+              <button type="submit">
+                <FontAwesomeIcon icon={faHouse} />
+                <p>홈</p>
+              </button>
+              <button type="submit">
+                <FontAwesomeIcon icon={faSearch} />
+                <p>검색</p>
+              </button>
+              <button type="submit">
+                <FontAwesomeIcon icon={faStar} />
+                <p>평가하기</p>
+              </button>
+            </div>
+            <div className={styles.sidebar_locker}>
+              <strong>보관함</strong>
+              <button type="submit">
+                <FontAwesomeIcon icon={faBookmark} />
+                <p>보고싶어요</p>
+              </button>
+              <button type="submit">
+                <FontAwesomeIcon icon={faArrowRotateLeft} />
+                <p>이어보기</p>
+              </button>
+              <button type="submit">
+                <FontAwesomeIcon icon={faSquareCheck} />
+                <p>다 본 작품</p>
+              </button>
+              <button type="submit">
+                <FontAwesomeIcon icon={faStar} />
+                <p>평가한 작품</p>
+              </button>
+            </div>
           </section>
           <div className={styles.nav}>
-            <img src={profile} className={styles.nav_profile}  alt='profile' />
+            <img src={profile} className={styles.nav_profile} alt="profile" />
           </div>
           <section className={styles.mainPage}>
             {movies.map((movie) => (
