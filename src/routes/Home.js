@@ -58,7 +58,7 @@ function Home() {
               </button>
               <button type="submit">
                 <FontAwesomeIcon icon={faArrowRotateLeft} />
-                <p>이어보기</p>
+                <p>추천하기</p>
               </button>
               <button type="submit">
                 <FontAwesomeIcon icon={faSquareCheck} />

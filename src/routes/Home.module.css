@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 /* Loading section */
 .loading {
     display: flex;
@@ -82,6 +83,7 @@
 
 .main{
     position: relative;
+    background-color: #000;
 }
 
 .mainPage{
@@ -150,15 +152,21 @@
     border: none;
     color: rgba( 255 , 255 , 255 , 0.8);
     margin-bottom: 12px;
+    padding-top: 3px;
+    height: 24px;
 }
 
 .sidebar button:hover{
     color: #fff;
+    background-color: #424242;
+    border-radius: 10px;
 }
 
 .sidebar button p{
-    display: block;
+    display: flex;
+    align-items: center;
     margin-left: 8px;
+    font-size: 14px;
 }
 
 .sidebar .sidebar_locker strong{

@@ -13,6 +13,18 @@ body{
     background-color: #000000;
 }
 
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0,0,0,0);
+}
+
+
 .movie{
     display: flex;
     width: 300px;
@@ -22,6 +34,7 @@ body{
 }
 
 .movie_img {
+    opacity: 0.8;
     display: block;
     height:400px;
     width: 300px;
@@ -38,10 +51,18 @@ body{
 } 
 
 .movie_title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin: 20px 0 10px 0;
+}
+
+.movie_title :hover{
+    color: #fff;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    opacity: 0.8;
 }
 
 .movie_title_link{
