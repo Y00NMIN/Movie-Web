@@ -35,7 +35,7 @@ function Home() {
       ) : (
         <section className={styles.main}>
           <section className={styles.sidebar}>
-            <h1 className={styles.sidebar_title}>Recom</h1>
+            <a href="#"><h1 className={styles.sidebar_title}>Recom</h1></a>
             <div className={styles.sidebar_setting}>
               <button type="submit">
                 <FontAwesomeIcon icon={faHouse} />

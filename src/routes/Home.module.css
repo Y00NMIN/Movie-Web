@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "IBM-Plex";
+    background-color: #000000;
 }
 
 /* Loading section */
@@ -12,14 +14,13 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
 }
 
 .loading_title {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.33333;
-    color: #151b26;
+    color: #fff;
     margin-bottom: 20px;
     text-align: center;
     animation-name: flicker;
@@ -127,15 +128,21 @@
 
 .sidebar_title, .sidebar_locker, .sidebar_setting{
     margin-left: 20px;
+    background-color: rgb(27, 28, 29);
+}
+
+.main .sidebar a{
+    color: rgba(255, 23, 68, 0.95);
+    text-decoration: none;
+    background-color: rgb(27, 28, 29);
+    text-shadow: 2px 3px 3px rgb(196,0,29);
 }
 
 .sidebar_title{
     display: block;
-    color: rgba( 255 , 23, 68, 095);
     font-size: 30px;
     font-weight: 20px;
     margin: 20px 0 40px 20px;
-    text-shadow: 2px 3px 3px rgb(196,0,29);
 }
 
 .sidebar_title :hover{
@@ -145,8 +152,6 @@
 .sidebar button{
     display: flex;
     align-items: flex-start;
-    width: 120px;
-    background-color: rgb(27, 28, 29);
     font-size: 16px;
     font-weight: 100;
     border: none;
@@ -154,12 +159,16 @@
     margin-bottom: 12px;
     padding-top: 3px;
     height: 24px;
+    background-color: rgb(27, 28, 29);
 }
 
-.sidebar button:hover{
+.sidebar_setting , .sidebar_locker :hover{
     color: #fff;
-    background-color: #424242;
-    border-radius: 10px;
+}
+
+
+.sidebar .sidebar_setting button{
+    background-color: rgb(27, 28, 29);
 }
 
 .sidebar button p{
@@ -167,9 +176,11 @@
     align-items: center;
     margin-left: 8px;
     font-size: 14px;
+    background-color: rgb(27, 28, 29);
 }
 
 .sidebar .sidebar_locker strong{
+    background-color: rgb(27, 28, 29);
     display: block;
     font-size: 12px;
     color: #6d6d6d;
