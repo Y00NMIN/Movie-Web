@@ -34,6 +34,11 @@ body{
     margin: 15px 10px 0 10px;
 }
 
+.movie:hover{
+    margin: 0 10px 10px 10px;
+    transition: margin 700ms ease-in;
+}
+
 .movie_img {
     position: absolute;
     display: block;
@@ -45,16 +50,23 @@ body{
 }
 
 .movie_desc {
-    color: #fff;
-    display: block;
     height: 350px;
     width: 250px;
     position: absolute;
     z-index: 3;
     opacity: 0;
+} 
+
+.movie_desc_link{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(66, 66, 66, 0); 
     display: flex;
     flex-direction: column;
-} 
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
 
 .movie_desc:hover 
 .movie_title, 
@@ -71,8 +83,24 @@ body{
     border-radius:10px ;
     opacity: 1;
     background-color: rgba(66, 66, 66, 0.4);
+    animation-name: Upper;
+    animation-duration: 1200ms;
+    animation-iteration-count: inherit;
+    animation-direction: reverse;
 }
  
+@keyframes Upper{
+    from{
+        opacity: 1;
+        background-color: rgba(66, 66, 66, 0.4);
+    }
+
+    to{
+        opacity: 0;
+        background-color: rgba(66, 66, 66, 0.4);
+    }
+}
+
 .movie_title{
     font-size: 20px;
     font-weight: bold;
@@ -80,26 +108,19 @@ body{
     margin: 20px 0 10px 0;
 }
 
-.movie_title :hover{
+.movie_title:hover{
     color: #fff;
-    height: 30px;
-    width: 300px;
-    border-radius: 10px;
-    opacity: 0.8;
-}
-
-.movie_title_link{
-    text-decoration: none;
-    color: #fff;
+    transition: opacity 2500ms ease-in;
 }
 
 .movie_year{
     color: #fff;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
+/* 
 .movie_text{
     color: #fff;
     display: inline-block;
@@ -108,7 +129,7 @@ body{
     margin-bottom: 10px;
     padding: 0 5px;
     border-radius: 20px;
-}
+} */
 
 
 .movie_list{
@@ -116,6 +137,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .movie_list li{

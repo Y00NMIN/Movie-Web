@@ -38,34 +38,34 @@ function Home() {
             <a href="#"><h1 className={styles.sidebar_title}>Recom</h1></a>
             <div className={styles.sidebar_setting}>
               <button type="submit">
-                <FontAwesomeIcon icon={faHouse} />
+                <FontAwesomeIcon className={styles.sidebar_icons} icon={faHouse} />
                 <p>홈</p>
               </button>
               <button type="submit">
-                <FontAwesomeIcon icon={faSearch} />
+                <FontAwesomeIcon className={styles.sidebar_icons} icon={faSearch} />
                 <p>검색</p>
               </button>
               <button type="submit">
-                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon className={styles.sidebar_icons} icon={faStar} />
                 <p>평가하기</p>
               </button>
             </div>
             <div className={styles.sidebar_locker}>
               <strong>보관함</strong>
               <button type="submit">
-                <FontAwesomeIcon icon={faBookmark} />
+                <FontAwesomeIcon className={styles.sidebar_icons} icon={faBookmark} />
                 <p>보고싶어요</p>
               </button>
               <button type="submit">
-                <FontAwesomeIcon icon={faArrowRotateLeft} />
+                <FontAwesomeIcon className={styles.sidebar_icons} icon={faArrowRotateLeft} />
                 <p>추천하기</p>
               </button>
               <button type="submit">
-                <FontAwesomeIcon icon={faSquareCheck} />
+                <FontAwesomeIcon className={styles.sidebar_icons} icon={faSquareCheck} />
                 <p>다 본 작품</p>
               </button>
               <button type="submit">
-                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon className={styles.sidebar_icons} icon={faStar} />
                 <p>평가한 작품</p>
               </button>
             </div>
@@ -74,6 +74,8 @@ function Home() {
             <img src={profile} className={styles.nav_profile} alt="profile" />
           </div>
           <section className={styles.mainPage}>
+            <h1 className={styles.mainPage_title}>✦ 영화 추천 목록</h1>
+            <div className={styles.mainPage_item}>
             {movies.map((movie) => (
               <Movie
                 key={movie.id}
@@ -85,6 +87,7 @@ function Home() {
                 genres={movie.genres}
               />
             ))}
+            </div>
           </section>
         </section>
       )}
