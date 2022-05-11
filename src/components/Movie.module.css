@@ -84,7 +84,7 @@ body{
     opacity: 1;
     background-color: rgba(66, 66, 66, 0.4);
     animation-name: Upper;
-    animation-duration: 1200ms;
+    animation-duration: 1000ms;
     animation-iteration-count: inherit;
     animation-direction: reverse;
 }
