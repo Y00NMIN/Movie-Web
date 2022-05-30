@@ -14,8 +14,17 @@ function Detail() {
     getMovie();
   }, []);
   return (
-    <h1>Detail</h1>
+    <section className={styles.Detail}>
+      <h1>Detail</h1>
+      { <p className={styles.movie_text}>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p> }
+      {movies.map((movie) => (
+              <Movie
+                id={movie.id}
+              />
+            ))}
+    </section>
   );
 }
 
 export default Detail;
+
