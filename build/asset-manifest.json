@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Movie-Web.git/static/css/main.3409ddd0.css",
+    "main.js": "/Movie-Web.git/static/js/main.083c0cdc.js",
+    "static/media/profile.jpg": "/Movie-Web.git/static/media/profile.16a512f2320f6b7d0962.jpg",
+    "index.html": "/Movie-Web.git/index.html",
+    "main.3409ddd0.css.map": "/Movie-Web.git/static/css/main.3409ddd0.css.map",
+    "main.083c0cdc.js.map": "/Movie-Web.git/static/js/main.083c0cdc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3409ddd0.css",
+    "static/js/main.083c0cdc.js"
+  ]
+}

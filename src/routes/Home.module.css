@@ -9,11 +9,11 @@
 .loading {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    border-radius: ;
 }
 
 .loading_title {

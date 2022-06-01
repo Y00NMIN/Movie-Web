@@ -13,6 +13,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "bootstrap": "^5.1.3",
+    "gh": "^2.8.9",
+    "pages": "^0.0.16",
     "prop-types": "15.8.1",
     "react": "18.0.0",
     "react-bootstrap": "^2.3.1",
@@ -50,5 +52,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Y00NMIN.github.io/Nomad-React-MovieWeb"
+  "homepage": "https://Y00NMIN.github.io/Movie-Web.git"
 }
